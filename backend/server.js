@@ -63,7 +63,7 @@ app.get('/',(req,res)=>{
     res.send("<h1>Welcome to website </h1>")
 })
 
-app.get('/jokes',(req,res)=>{
+app.get('/api/jokes',(req,res)=>{
     res.send(jokes)
 })
 
