@@ -17,7 +17,7 @@ function App() {
       console.log(error);
       
     })
-  })
+  },[])
 
   return (
     <>
@@ -25,12 +25,12 @@ function App() {
       <p>jokes :{jokes.length}</p>
 
       {
-        jokes.map((joke,index)=>{
-          <div key={joke.id}>
+        jokes.map((joke,index)=>(
+          <div key={index}>
             <h3>{joke.title}</h3>
             <p>{joke.content}</p>
           </div>
-        }
+        )
 
         )
       }
